@@ -11,12 +11,10 @@ package inventairePackage;
  */
 
 
-import java.lang.*;
-
 public class Inventaire {
 
 	public static void main(String[] args){
-		TraitementFichier.ouvrirFichier(args[0]);
-		MenuPrincipal.afficherMenu();
+		TraitementFichier.ouvrirFichier("BLOPPPPP");
+		MenuPrincipal.startMenu();
 	}
 }

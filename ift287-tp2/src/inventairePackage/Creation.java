@@ -1,9 +1,54 @@
 package inventairePackage;
 
+
 /**
  * Classe permettant de créé un nouvel enregistrement
  */
 
-public class Creation {
+import java.util.*;
 
+public class Creation {
+	
+	public static void creationJoueur(){
+		
+		System.out.println("Entrer la clé d'identification du joueur:");
+		Scanner idJoueur = new Scanner(System.in);
+		
+		System.out.println("\nEntrer le nom du joueur:");
+		Scanner nom = new Scanner(System.in);
+		
+		System.out.println("\nCombien de carte? :");
+		Scanner nbCarte = new Scanner(System.in);
+		
+		
+		for(int i=1; i<=nbCarte;i++){
+			creationCarte(i);
+		}
+		
+		idJoueur.close();
+		nom.close();
+		nbCarte.close();
+	}
+
+	
+	public static void creationCarte(int numCarte){
+	
+		System.out.println("\nEntrer le titre de la carte " + numCarte + " :");
+		Scanner titreCarte = new Scanner(System.in);
+		
+		System.out.println("\nEntrer l'équipe de la carte " + numCarte + " :");
+		Scanner equipeCarte = new Scanner(System.in);
+		
+		System.out.println("\nEntrer l'année de parution de la carte " + numCarte + " :");
+		Scanner anneeCarte = new Scanner(System.in);
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
 }
