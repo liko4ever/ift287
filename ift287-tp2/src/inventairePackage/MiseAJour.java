@@ -5,5 +5,9 @@ package inventairePackage;
  */
 
 public class MiseAJour {
+	
+	MiseAJour(){
+		
+	}
 
 }

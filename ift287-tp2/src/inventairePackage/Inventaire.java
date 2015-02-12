@@ -14,7 +14,6 @@ package inventairePackage;
 public class Inventaire {
 
 	public static void main(String[] args){
-		TraitementFichier.ouvrirFichier("BLOPPPPP");
-		MenuPrincipal.startMenu();
+		MenuPrincipal.startMenu(TraitementFichier.ouvrirFichier("BLOPPPPP"));
 	}
 }

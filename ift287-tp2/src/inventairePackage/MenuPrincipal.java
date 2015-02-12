@@ -24,7 +24,7 @@ public class MenuPrincipal {
 	}
 		
 		
-	private static boolean choisirFonction(){
+	private static boolean choisirFonction(Vector<Joueur> listeJoueurs){
 		Scanner in = new Scanner(System.in);
 		
 			switch (in.next()){
@@ -38,7 +38,7 @@ public class MenuPrincipal {
 				//Appel de Ajouter
 				case "1":
 					System.out.println("Option Selectionne: 1. Ajout d'un joueur\n");
-					
+					new Creation.creationJoueur(listeJoueurs);
 					break;
 				//Appel de Afficher	
 				case "2":
@@ -72,11 +72,11 @@ public class MenuPrincipal {
 	}
 	
 	
-	public static void startMenu(){
+	public static void startMenu(Vector<Joueur> listeJoueurs){
 		do{
 			afficherMenu();
 			
-		}while(choisirFonction());
+		}while(choisirFonction(listeJoueurs));
 	}
 
 }
